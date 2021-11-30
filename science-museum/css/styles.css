@@ -427,7 +427,11 @@ header {
 
 @media screen and (max-width: 560px) {
   header h2 {
-    visibility: hidden; } }
+    visibility: hidden; }
+
+  nav {
+    columns: 2;
+    column-gap: 0; } }
 nav {
   background-color: #3098D9; }
   nav ul {
@@ -449,22 +453,22 @@ nav {
     background-color: #012033; }
 
 main {
-  margin: 0;
-  padding: 0 1rem; }
+  margin: 0; }
   main img {
     width: 100%;
     height: auto; }
-  main #content h1 {
-    color: #07598C;
-    font-family: "Playfair Display", serif;
-    font-weight: 600; }
-  main #content figure {
-    margin: 0;
-    width: 100%;
-    padding-bottom: 1rem; }
-  main #content figure img {
-    width: 100%;
-    height: auto; }
+  main #content {
+    padding: 0 1rem; }
+    main #content h1 {
+      color: #07598C;
+      font-family: "Playfair Display", serif;
+      font-weight: 600; }
+    main #content figure {
+      margin: 0;
+      width: 100%; }
+    main #content figure img {
+      width: 100%;
+      height: auto; }
 
 footer {
   background-color: #F2A30F;

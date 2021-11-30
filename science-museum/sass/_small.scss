@@ -39,8 +39,13 @@ header {
 } // end of header
 
 @media screen and (max-width: 560px) {
-    header h2 {visibility: hidden;}
-    }
+    header h2 {
+        visibility: hidden;
+        }
+    nav { 
+        columns: 2;
+        column-gap: 0;}
+        }
 
 
 nav {
@@ -75,7 +80,7 @@ nav {
 
     main  {
         margin: 0;
-        padding: 0 $gutter;
+        // padding: 0 $gutter;
     
     img {
         width: 100%;
@@ -83,6 +88,7 @@ nav {
         }
             
     #content {
+        padding: 0 $gutter;
         h1 {
             color: $accentColor;
             font-family: $headerFontFamily;
@@ -92,7 +98,6 @@ nav {
         figure {
             margin: 0;
             width: 100%;
-            padding-bottom: $gutter;
             }   
     
         figure img {
