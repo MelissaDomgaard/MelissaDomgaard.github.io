@@ -1,11 +1,18 @@
 
-    header, nav, main, footer {
-        max-width: 75rem;
-        margin:auto;
-    }
     
-    nav ul {padding-left: $gutter;}
+    
+
     nav li {width:auto;}
     nav a {padding: .5rem 1rem;}
     
-    #content figure { width: 32%;}
+    .images {
+        margin: 0;
+        width: 49%;
+       
+            img {
+                float: right;
+                width: 100%;
+                height: auto;
+                }
+        }
+

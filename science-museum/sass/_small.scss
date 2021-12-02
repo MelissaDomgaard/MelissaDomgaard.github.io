@@ -14,13 +14,15 @@ body {
 
 header {
     background-color: $primaryColor;
-    padding: 1rem $gutter;
+    padding: 2rem $gutter;
 
-    img {
+    #logo {
+        margin: 0;
+        width: 100%;
+        }
+    #logo img {
         float: left;
-        width: 80px;
-        height: auto;
-        padding-right: 10px;
+        padding: 0 0.5rem;
         }
     
     h1 {
@@ -45,7 +47,7 @@ header {
     nav { 
         columns: 2;
         column-gap: 0;}
-        }
+     } // end of mobile nav
 
 
 nav {
@@ -81,7 +83,12 @@ nav {
     main  {
         margin: 0;
     
-    img {
+    #heroImage {
+        margin: 0;
+        width: 100%;
+        }   
+    #heroImage img {
+        margin: 0;
         width: 100%;
         height: auto;
         }
@@ -94,12 +101,12 @@ nav {
             font-weight: $heavyWeight;
             }
   
-        figure {
+        .images {
             margin: 0;
             width: 100%;
             }   
     
-        figure img {
+        .images img {
             width: 100%;
             height: auto;
             }

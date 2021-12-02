@@ -1,10 +1,51 @@
+header {
+    max-width: 100%;
+    margin:auto;
 
-    nav li {width: 25%; float: left;}
-    
-    
-   #content figure {
-        float: right; 
-        width: 50%;
+    #logo {
+        margin: 0;
+        width: 100%;
+        }
+    #logo img {
+        float: left;
+        padding: 0 0.5rem;
+        }
+
+     h1 {
+        padding: 3rem 0 0 0;
     }
+} 
+
+
+
+nav, footer {
+    max-width: 100%;
+    margin:auto;
+}
+
+ header h1, header h2, nav ul, main {
+    max-width: 75rem;
+    margin:auto;
+}
+   
+   
+   
+   
+   nav li {
+        width: 25%; 
+        float: left;
+        }
+    
+   /* .images {
+    margin: 0;
+    width: 49%;
+   
+        img {
+            float: right;
+            width: 100%;
+            height: auto;
+            }
+    } */
+ 
    
     
