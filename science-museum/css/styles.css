@@ -448,11 +448,13 @@ nav {
     font-weight: 600; }
   nav li.active {
     background-color: #07598C; }
+  nav li.active a {
+    color: #eee; }
   nav a {
     display: block;
     padding: .8rem 0;
     /*44px min*/
-    color: #eee;
+    color: #000;
     text-align: center;
     text-decoration: none; }
   nav a:hover {

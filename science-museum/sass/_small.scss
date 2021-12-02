@@ -72,11 +72,14 @@ nav {
     li.active {
         background-color: $accentColor;
         }
+    li.active a {
+        color: #eee;
+    }
     
     a {
         display: block;
         padding: .8rem 0; /*44px min*/
-        color: #eee;
+        color: #000;
         text-align: center;
         text-decoration: none; 
         }
