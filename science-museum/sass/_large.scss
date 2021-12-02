@@ -1,31 +1,19 @@
-header {
+header, nav, footer {
     max-width: 100%;
     margin:auto;
 }
 
-nav, footer {
-    max-width: 100%;
-    margin:auto;
-}
-
- header h1, header h2, nav ul, main {
+ #logo, header h1, header h2, nav ul, main {
     max-width: 75rem;
     margin:auto;
 }
     
     
 
-    nav li {width:auto;}
-    nav a {padding: .5rem 1rem;}
+nav li {width:auto;}
+nav a {padding: .5rem 1rem;}
     
-    .images {
-        margin: 0;
-        width: 32%;
-       
-            img {
-                float: right;
-                width: 100%;
-                height: auto;
-                }
-        }
+main figure.images {
+    width: 32%;
+    }
 
