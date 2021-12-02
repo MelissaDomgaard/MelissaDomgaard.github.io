@@ -12,13 +12,19 @@ body {
     font-size: 16px;
     }
 
+img {        
+    width: 100%;
+    height: auto;
+    }
+
 header {
+    display: block;
     background-color: $primaryColor;
     padding: 2rem $gutter;
 
     #logo {
         margin: 0;
-        width: 100%;
+        width: 90px;
         }
     #logo img {
         float: left;
@@ -47,7 +53,7 @@ header {
     nav { 
         columns: 2;
         column-gap: 0;}
-     } // end of mobile nav
+        } // end of mobile nav
 
 
 nav {
@@ -82,16 +88,12 @@ nav {
 
     main  {
         margin: 0;
+        display: block;
     
     #heroImage {
         margin: 0;
         width: 100%;
         }   
-    #heroImage img {
-        margin: 0;
-        width: 100%;
-        height: auto;
-        }
             
     #content {
         padding: 0 $gutter;
@@ -105,11 +107,6 @@ nav {
             margin: 0;
             width: 100%;
             }   
-    
-        .images img {
-            width: 100%;
-            height: auto;
-            }
     } // end of content
 
 } // end of main
