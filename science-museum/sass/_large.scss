@@ -3,17 +3,20 @@ header, nav, footer {
     margin:auto;
 }
 
- #logo, header h1, header h2, nav ul, main {
+ header #logo, header h1, header h2, nav ul, main {
     max-width: 75rem;
-    margin:auto;
+    margin: auto;
 }
-    
-    
+
+header #logo {
+    padding-bottom: 2rem;
+}
+
 
 nav li {width:auto;}
 nav a {padding: .5rem 1rem;}
     
-main figure.images {
+main #content figure.images {
     width: 32%;
     }
 
