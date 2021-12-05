@@ -7,63 +7,89 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- BODY --------------*/
 body {
+    font-family: $primaryFontFamily;
+    font-weight: $regularWeight;
     font-size: 16px;
-    font-family: Verdana, sans-serif;
-}
+    }
 
 
 /*----------- HEADER --------------*/
 header {
-    padding: .5rem 2%;
-    background-color: #ddd;
-}
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+    display: grid;
+    grid-template-columns: 100px auto;
+    padding: .5rem $gutter;
+    i { font-size: 5rem; }
+    div { padding: 1rem; }
+    h1 {
+        margin: 0;
+        font-weight: $heavyWeight;
+        font-size: 2rem;
+        }
+    h2 {
+        margin: 0;
+        font-weight: $regularWeight;
+        font-size: 1.5rem;
+        }
+}// end of header
+
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    float: left;
-    width: 25%;
-}
-nav ul li a {
-    display: block;
-    background-color: #444;
-    color: #eee;
-    border-left: 1px solid #777;
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-}
-nav ul li:first-child a {border-left: none;}
+    background-color: $menuColor;
 
-nav ul li a:hover {
-    background-color: #eee;
-    color: #333;
-}
-nav ul li.active a {
-    background-color: #000;
-    color: #fff;
-}
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul li {
+        float: left;
+        width: 25%;
+        }   
+    ul li a {
+        display: block;
+        background-color: darken($menuColor, 10%);
+        color: #000;
+        border-left: 1px solid #ffe0d4;
+        padding: .5rem 0;
+        text-decoration: none;
+        font-size: .9rem;
+        text-align: center;
+        }
+    ul li:first-child a {border-left: none; }
+
+    ul li a:hover { background-color: lighten($menuColor, 5%); }
+    ul li.active a { background-color: darken($menuColor, 25%); }
+    
+} // end of nav
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
     min-height: 10rem;
-}
+    h1 {
+        margin: 1rem $gutter;
+    }
+    div.produceGallery {
+        display: flex;
+        flex-wrap: wrap;
+        }
+    div.produceGallery figure {
+        flex-basis: 46%;
+        margin: 1rem $gutter;
+    }
+        
+
+    img {
+        width: 100%;
+        height: auto;
+        }
+
+}// end of main
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
+    background-color: $primaryColor;
+    padding: .5rem $gutter;
     text-align: center;
 }
 
