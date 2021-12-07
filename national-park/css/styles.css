@@ -316,7 +316,6 @@ html {
 
 /*----------- BODY --------------*/
 body {
-  font-size: 16px;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   color: #000D0C; }
@@ -327,7 +326,7 @@ div#headerWrapper {
   height: 88px; }
 
 header {
-  padding: 1rem 2%; }
+  padding: 1rem; }
   header h1 {
     margin: 0;
     font-size: 2rem;
@@ -373,7 +372,7 @@ div#mainWrapper {
   background-color: none; }
 
 main {
-  padding: 0 2%;
+  padding: 0 1rem;
   min-height: 10rem;
   background-color: #fff; }
   main h1 {
@@ -385,26 +384,41 @@ main {
     display: flex;
     flex-wrap: wrap; }
     main .cardGallery .card {
+      flex-basis: 100%;
       border: 1px solid #999;
       border-radius: 10px;
-      margin: 1rem 1rem 1rem 0;
+      margin: 1rem 1%;
       text-align: center; }
       main .cardGallery .card section {
-        background: #58878C;
-        padding: 1rem 0;
-        text-decoration: none;
-        color: #fff;
+        background: #9FB3BF;
+        padding: 1.3rem;
         border-top-left-radius: 9px;
-        border-top-right-radius: 9px; }
+        border-top-right-radius: 9px;
+        font-size: 1.3rem;
+        font-weight: 600; }
       main .cardGallery .card p {
-        padding: 0 1.5rem; }
+        padding: 0 2vw; }
       main .cardGallery .card img {
-        margin-top: 1rem; }
+        margin-top: 1rem;
+        position: relative;
+        animation: myAnimation 10s 1; }
+@keyframes myAnimation {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
       main .cardGallery .card .button {
-        background: #58878C;
+        display: block;
+        background: #9FB3BF;
         text-decoration: none;
-        color: #fff;
-        margin: 1rem; }
+        color: #000D0C;
+        padding: 1rem 0;
+        margin: 1rem 4vw;
+        border-radius: 10px; }
+      main .cardGallery .card .button:hover {
+        background-color: #718fa0; }
 
 /*----------- FOOTER --------------*/
 div#footerWrapper {
@@ -446,6 +460,9 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
+  main .cardGallery .card {
+    flex-basis: 48%; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 60rem) {
@@ -468,5 +485,8 @@ footer {
 
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main .cardGallery .card {
+    flex-basis: 31.33%; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */

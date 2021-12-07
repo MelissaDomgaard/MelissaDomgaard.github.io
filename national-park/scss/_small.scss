@@ -7,10 +7,9 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- BODY --------------*/
 body {
-    font-size: 16px;
     font-family: $bodyFont;
     font-size: 16px;
-    color: #000D0C;
+    color: $bodyColor;
 }
 
 
@@ -21,7 +20,7 @@ div#headerWrapper {
     }
 
 header {
-    padding: 1rem 2%;
+    padding: $gutter;
 
     h1 {
         margin: 0;
@@ -81,7 +80,7 @@ nav {
 div#mainWrapper { background-color: none; }
 
 main {
-    padding: 0 2%;
+    padding: 0 $gutter;
     min-height: 10rem;
     background-color: #fff;
 
@@ -96,36 +95,52 @@ main {
         display: flex;
         flex-wrap: wrap;
        
-        
         .card {
+            flex-basis: 100%;
             border: 1px solid #999;
             border-radius: $cbr;
-            margin: 1rem 1rem 1rem 0;
+            margin: $gutter 1%;
             text-align: center;
            
             section {
-                background: #58878C;
-                padding: 1rem 0;
-                text-decoration: none;
-                color: #fff;
+                background: $cardColor;
+                padding: 1.3rem;
                 border-top-left-radius: $cbr - 1;
                 border-top-right-radius: $cbr - 1;
+                font-size: 1.3rem;
+                font-weight: $heavyWeight;
                 }
-            p {
-                padding: 0 1.5rem;
-                }
-            img {
-                margin-top: 1rem;
+            p { padding: 0 2vw; }
+            
+            img { 
+                margin-top: $gutter;
+                position: relative; 
+                animation: myAnimation 10s 1;
                 }
 
-        .button {
-                background: #58878C;
+                @keyframes myAnimation {
+                    0%    { opacity: 0; }
+                    50%   { opacity: 1; }
+                    100%  { opacity: 1; }
+}
+
+            .button {
+                display: block; 
+                // margin: $gutter;   
+                background: $cardColor;
                 text-decoration: none;
-                color: #fff;
-                margin: 1rem;
+                color: $bodyColor;
+                padding: $gutter 0;
+                margin: $gutter 4vw;
+                border-radius: $cbr;  
+                }
+            .button:hover {
+                background-color: darken($cardColor, 15%);  
                 }
 
             }// end of card
+
+
 
     }// end of card gallery
 
