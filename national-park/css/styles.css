@@ -383,6 +383,8 @@ main {
   main .cardGallery {
     display: flex;
     flex-wrap: wrap; }
+    main .cardGallery .card:hover img {
+      animation: myAnimation 3s 1; }
     main .cardGallery .card {
       flex-basis: 100%;
       border: 1px solid #999;
@@ -400,13 +402,12 @@ main {
         padding: 0 2vw; }
       main .cardGallery .card img {
         margin-top: 1rem;
-        position: relative;
-        animation: myAnimation 10s 1; }
+        position: relative; }
 @keyframes myAnimation {
   0% {
-    opacity: 0; }
-  50% {
     opacity: 1; }
+  50% {
+    opacity: 0; }
   100% {
     opacity: 1; } }
       main .cardGallery .card .button {

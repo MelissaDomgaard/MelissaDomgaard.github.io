@@ -95,6 +95,9 @@ main {
         display: flex;
         flex-wrap: wrap;
        
+        .card:hover img {
+            animation: myAnimation 3s 1;
+        }
         .card {
             flex-basis: 100%;
             border: 1px solid #999;
@@ -115,12 +118,12 @@ main {
             img { 
                 margin-top: $gutter;
                 position: relative; 
-                animation: myAnimation 10s 1;
+                // animation: myAnimation 10s 1;
                 }
 
                 @keyframes myAnimation {
-                    0%    { opacity: 0; }
-                    50%   { opacity: 1; }
+                    0%    { opacity: 1; }
+                    50%   { opacity: 0; }
                     100%  { opacity: 1; }
 }
 
