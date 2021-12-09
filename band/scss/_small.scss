@@ -74,11 +74,13 @@ main {
     h2 {
         font-size: 2rem;
         font-weight: $heavyWeight;
+        color: $primaryColor;
         margin: 2% 0 0 0;
     }
 
     h3{
         font-size: 1.5rem;
+        color: $navColor;
     }
     img {
         width: 100%;

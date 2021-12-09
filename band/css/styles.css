@@ -367,9 +367,11 @@ main {
   main h2 {
     font-size: 2rem;
     font-weight: 600;
+    color: #122426;
     margin: 2% 0 0 0; }
   main h3 {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    color: #8C3A58; }
   main img {
     width: 100%; }
   main figure.shape1 {
