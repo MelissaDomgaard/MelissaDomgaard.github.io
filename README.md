@@ -4,3 +4,4 @@ My website on GitHub
 * Project 2: [Science Museum](https://melissadomgaard.github.io/science-museum/)
 * Project 3: [Fruit Stand](https://melissadomgaard.github.io/fruit-stand/)
 * Project 4: [National Park](https://melissadomgaard.github.io/national-park/)
+* Project 5: [Restaurant](https://melissadomgaard.github.io/restaurant/)
