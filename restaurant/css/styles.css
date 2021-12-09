@@ -321,68 +321,74 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-  padding: .5rem 2%;
+  padding: 0.5rem 2%;
   background-color: #292624; }
-
-header h1 {
-  margin: 0;
-  color: #fff;
-  font-weight: 900;
-  letter-spacing: 0.1rem; }
-
-header h2 {
-  margin: 0;
-  color: #fff;
-  font-weight: 400; }
-
-header figure.logo {
-  float: left;
-  margin: 0 2% 0 0; }
+  header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700; }
+  header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400; }
+  header figure.logo {
+    float: left;
+    margin: 0 2%; }
 
 /*----------- NAVIGATION --------------*/
 nav {
   background-color: #BAACA2; }
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-
-nav ul li {
-  float: left;
-  width: 25%; }
-
-nav ul li a {
-  display: block;
-  background-color: #8d7869;
-  color: #eee;
-  border-left: 1px solid #e5e0dd;
-  padding: .5rem 0;
-  text-decoration: none;
-  font-size: .9rem;
-  text-align: center; }
-
-nav ul li:first-child a {
-  border-left: none; }
-
-nav ul li a:hover {
-  background-color: #e5e0dd;
-  color: #333; }
-
-nav ul li.active a {
-  background-color: #53463d;
-  color: #fff; }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+  nav ul li {
+    float: left;
+    width: 25%; }
+  nav ul li a {
+    display: block;
+    background-color: #8d7869;
+    color: #eee;
+    border-left: 1px solid #e5e0dd;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .8rem;
+    text-align: center; }
+  nav ul li:first-child a {
+    border-left: none; }
+  nav ul li a:hover {
+    background-color: #e5e0dd;
+    color: #333; }
+  nav ul li.active a {
+    background-color: #53463d;
+    color: #fff; }
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0 2%;
   min-height: 10rem; }
+  main img {
+    width: 100%; }
+  main picture.heroImage {
+    display: block;
+    width: 100%; }
+  main .mainContent {
+    margin: 0 2%; }
+  main picture.founderImage {
+    display: block;
+    float: right;
+    width: 48%;
+    margin: 0 0 2% 2%; }
+  main p {
+    line-height: 1.5rem; }
 
 /*----------- FOOTER --------------*/
 footer {
   background-color: #292624;
   padding: .5rem 2%;
   color: #fff;
+  font-size: .8rem;
   text-align: center; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -395,22 +401,21 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%; }
-
   nav ul li {
     width: auto; }
 
   nav ul li:first-child a {
-    border-left: 1px solid #777; }
+    border-left: 1px solid #e5e0dd; }
 
   nav ul li:last-child a {
-    border-right: 1px solid #777; }
+    border-right: 1px solid #e5e0dd; }
 
   nav ul li a {
-    padding: .5rem 1rem; }
+    padding: .5rem 1rem;
+    font-size: 1rem; }
 
-  /*----------- MAIN --------------*/
+  /*----------- MAIN 
+  --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {

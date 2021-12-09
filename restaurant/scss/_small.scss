@@ -14,65 +14,91 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-    padding: .5rem 2%;
+    padding: .5rem $gutter;
     background-color: $primaryColor;
-}
-header h1 {
-    margin: 0;
-    color: $secondaryColor;
-    font-weight: $blackWeight;
-    letter-spacing: 0.1rem;
-}
-    
-header h2 {
-    margin: 0; 
-    color: $secondaryColor;
-    font-weight: $regularWeight;
-}
 
-header figure.logo {
-    float: left;
-    margin: 0 2% 0 0;
-}
+    h1 {
+        margin: 0;
+        color: $secondaryColor;
+        font-size: 2rem;
+        font-weight: $heavyWeight;
+        }
+        
+    h2 {
+        margin: 0; 
+        color: $secondaryColor;
+        font-size: 1.3rem;
+        font-weight: $regularWeight;
+        }
+
+    figure.logo {
+        float: left;
+        margin: 0 $gutter;
+        }
+}//end of header
 
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: $navColor;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-nav ul li {
-    float: left;
-    width: 25%;
-}
-nav ul li a {
-    display: block;
-    background-color: darken($navColor, 20%);
-    color: #eee;
-    border-left: 1px solid lighten($navColor, 20%);
-    padding: .5rem 0;
-    text-decoration: none;
-    font-size: .9rem;
-    text-align: center;
-}
-nav ul li:first-child a {border-left: none;}
 
-nav ul li a:hover {
-    background-color: lighten($navColor, 20%);
-    color: #333;
-}
-nav ul li.active a {
-    background-color: darken($navColor, 40%);
-    color: #fff;
-}
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        }
+    ul li {
+        float: left;
+        width: 25%;
+        }
+    ul li a {
+        display: block;
+        background-color: darken($navColor, 20%);
+        color: #eee;
+        border-left: 1px solid lighten($navColor, 20%);
+        padding: .5rem 0;
+        text-decoration: none;
+        font-size: .8rem;
+        text-align: center;
+        }
+    ul li:first-child a {border-left: none;}
+
+    ul li a:hover {
+        background-color: lighten($navColor, 20%);
+        color: #333;
+        }
+    ul li.active a {
+        background-color: darken($navColor, 40%);
+        color: #fff;
+        }
+}//end of nav
+
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
     min-height: 10rem;
-}
+
+    img {
+    width: 100%;
+    }
+ 
+    picture.heroImage {
+        display: block;
+        width: 100%;
+    }
+    .mainContent {
+        margin: 0 $gutter;
+    }
+    picture.founderImage {
+        display: block;
+        float: right;
+        width: 48%;
+        margin: 0 0 $gutter 2%;
+    }
+    p {
+        line-height: 1.5rem;
+    }
+
+}//end of main
+
 
 
 /*----------- FOOTER --------------*/
@@ -80,6 +106,7 @@ footer {
     background-color: $primaryColor;
     padding: .5rem 2%;
     color: $secondaryColor;
+    font-size: .8rem;
     text-align: center;
 }
 

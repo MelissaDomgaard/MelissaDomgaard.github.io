@@ -1,68 +1,86 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="description" content="Restaurant page">
-<meta name="author" content="Melissa Domgaard">
+    <meta charset="utf-8">
+    <meta name="description" content="Restaurant page">
+    <meta name="author" content="Melissa Domgaard">
 
 
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
 
-<!-- STYLE SHEETS -->
-<link href="css/styles.css" rel="stylesheet">
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-     
+
 </head>
+
 <body>
-<!-- HEADER HERE -->
-	<header class="clearfix">
+    <!-- HEADER HERE -->
+    <header class="clearfix">
         <figure class="logo">
-            <img src="images/logo0.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x,">
+            <img src="images/logo0.png" alt="logo"
+                srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x,">
         </figure>
- <h1>Restaurant</h1>
+        <h1>Restaurant</h1>
         <h2>Affordable Eats</h2>
     </header>
-    
-    
-<!-- NAVIGATION HERE -->
+
+
+    <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul >
+        <ul>
             <li><a href="#">Menu</a></li>
             <li><a href="#">Locations</a></li>
             <li><a href="#">Contact</a></li>
-            <li class="active"><a href="#">Our Story</a></li>    
+            <li class="active"><a href="#">Our Story</a></li>
         </ul>
     </nav>
-    
-    
-<!-- CONTENT HERE -->
-    <main>
-        <figure class="heroImage">
-            <img src="#" alt="Hero image">
-        </figure>
-        <h2>Our Founder</h2>
-        <figure>
-            <img src="#" alt="Founder">
-        </figure>
-        <p>Globally envisioneer resource maximizing architectures rather than effective deliverables. Seamlessly myocardinate enterprise-wide web services with stand-alone customer service. Efficiently pontificate state of the art content without principle-centered methods of empowerment. Completely engineer prospective infomediaries with empowered action items. Progressively create granular vortals through client-centric e-commerce.
 
-            Enthusiastically engage long-term high-impact web-readiness via interoperable architectures. Completely envisioneer business e-commerce after backward-compatible content. Proactively maximize plug-and-play content and goal-oriented initiatives. Appropriately syndicate focused intellectual capital whereas end-to-end innovation. Competently re-engineer high-payoff markets through corporate catalysts for change.
-            
-            Holisticly enable efficient users via state of the art catalysts for change. Credibly engage adaptive expertise vis-a-vis alternative schemas. Dynamically morph cooperative methods of empowerment vis-a-vis dynamic architectures. Professionally harness standardized data rather than market positioning ideas. Competently parallel task tactical technologies vis-a-vis holistic models.</p>
+
+    <!-- CONTENT HERE -->
+    <main class="clearfix">
+        <picture class="heroImage">
+            <source media="(max-width:450px" srcset="images/hero450.jpg">
+            <source media="(max-width:600px" srcset="images/hero600.jpg">
+            <source media="(max-width:750px" srcset="images/hero750.jpg">
+            <source media="(max-width:900px" srcset="images/hero900.jpg">
+            <source media="(max-width:1050px" srcset="images/hero1050.jpg">
+            <img src="images/hero.jpg" alt="Hero image">
+        </picture>
+        <div class="mainContent">
+            <h2>Our Founder</h2>
+            <picture class="founderImage">
+                <source media="(max-width:600px" srcset="images/founder300.jpg">
+                <source media="(max-width:900px" srcset="images/founder450.jpg">
+                <source media="(max-width:1200px" srcset="images/founder600.jpg">
+                <img src="images/founder.jpg" alt="Founder">
+            </picture>
+            <p>Objectively negotiate stand-alone portals via empowered results. Monotonectally facilitate clicks-and-mortar alignments via distinctive innovation. Continually target seamless potentialities after viral processes. Assertively optimize enterprise-wide communities whereas an expanded array of web services. Progressively extend visionary web services before extensive applications.
+
+                Competently disintermediate proactive content and collaborative data. Assertively utilize strategic outsourcing vis-a-vis excellent technology. Intrinsicly engage compelling alignments rather than transparent scenarios. Efficiently exploit an expanded array of initiatives through dynamic process improvements. Completely grow impactful initiatives through just in time scenarios.
+                
+                Rapidiously drive functional catalysts for change and enterprise customer service. Energistically disseminate client-centric ROI via just in time deliverables. Proactively initiate highly efficient strategic theme areas for collaborative manufactured products. Competently disseminate focused sources without low-risk high-yield meta-services. Interactively conceptualize sticky networks via team driven models.
+                
+                Interactively deliver synergistic channels rather than covalent processes. Compellingly monetize multifunctional infrastructures for team driven solutions. Professionally exploit performance based e-services before efficient "outside the box" thinking. Enthusiastically predominate optimal potentialities after distributed functionalities. Collaboratively foster multifunctional e-business via fully tested materials.
+                
+                Distinctively leverage existing quality process improvements rather than standardized paradigms. Rapidiously fashion impactful human capital before exceptional ideas. Uniquely communicate out-of-the-box functionalities without stand-alone innovation. Credibly optimize orthogonal relationships without just in time processes.</p>
+        </div>
     </main>
-    
-<!-- FOOTER HERE -->   
+
+    <!-- FOOTER HERE -->
     <footer>
         &copy; 2021 Melissa Domgaard &bull; Login
     </footer>
 
 </body>
+
 </html>
