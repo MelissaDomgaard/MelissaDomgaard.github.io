@@ -69,7 +69,40 @@ nav {
 main {
     padding: 0 2%;
     min-height: 10rem;
+    
+    img {
+        width: 100%;
     }
+    figure.shape1 {
+        float:right;
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        margin: .5rem;
+    }
+
+    figure.shape2 {
+        float:right;
+        shape-outside: polygon(50% 100%, 0 0, 100% 0);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        margin: .5rem;
+    }
+
+    figure.shape3 {
+        float:right;
+        shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        margin: .5rem;
+    }
+
+    figure.shape4 {
+        float:right;
+        shape-outside: circle(100% at 100% 0%);
+        clip-path: circle(100% at 100% 0%);
+        margin: .5rem;
+    }
+
+
+}//end of main
 
 
 /*----------- FOOTER --------------*/

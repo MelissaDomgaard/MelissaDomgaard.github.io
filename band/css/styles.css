@@ -364,6 +364,28 @@ nav {
 main {
   padding: 0 2%;
   min-height: 10rem; }
+  main img {
+    width: 100%; }
+  main figure.shape1 {
+    float: right;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin: .5rem; }
+  main figure.shape2 {
+    float: right;
+    shape-outside: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    margin: .5rem; }
+  main figure.shape3 {
+    float: right;
+    shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin: .5rem; }
+  main figure.shape4 {
+    float: right;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: circle(100% at 100% 0%);
+    margin: .5rem; }
 
 /*----------- FOOTER --------------*/
 footer {
@@ -394,16 +416,26 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
+  main div.news {
+    clear: both;
+    column-count: 2; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   header, nav, main, footer {
-    max-width: 64rem;
+    max-width: 75rem;
     margin: auto; }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   /*----------- MAIN --------------*/
+  main div.news {
+    clear: both;
+    column-count: 4; }
+    main div.news h3 {
+      break-before: column; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */

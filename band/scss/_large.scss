@@ -1,5 +1,5 @@
 header, nav, main, footer {
-        max-width: 64rem;
+        max-width: 75rem;
         margin:auto;
 }
 
@@ -16,7 +16,14 @@ header, nav, main, footer {
 
 
 /*----------- MAIN --------------*/
+main {
+        div.news {
+            clear: both;
+            column-count: 4;
 
+            h3 {break-before: column;}
+        }//end of news
+    }//end of main
 
 
 /*----------- FOOTER --------------*/
