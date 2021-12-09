@@ -19,6 +19,9 @@
     <link href="css/styles.css" rel="stylesheet">
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 
 
 </head>
@@ -26,7 +29,7 @@
 <body>
     <!-- HEADER HERE -->
     <header>
-        <h1>Gaia</h1>
+        <h1>GAIA</h1>
         <h2>Rocking your World</h2>
     </header>
 
@@ -96,7 +99,24 @@
         </div>
 
         <h3>Performances</h3>
+        <div class="gallery">
+            <figure><img alt="concert" class="lazy" data-src="images/concert01.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert02.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert03.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert04.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert05.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert06.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert07.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert08.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert09.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert10.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert11.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert12.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert13.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert14.jpg" /></figure>
+            <figure><img alt="concert" class="lazy" data-src="images/concert15.jpg" /></figure>
 
+        </div>
 
 
 
@@ -104,9 +124,15 @@
 
     <!-- FOOTER HERE -->
     <footer>
-        &copy; 201x &bull; Paul Cheney &bull; 123-555-6789
+        &copy; 2021 Melissa Domgaard &bull; Login
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+
+    <script>var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy", treshold: 0
+            // Your custom settings go here
+        });</script>
 </body>
 
 </html>

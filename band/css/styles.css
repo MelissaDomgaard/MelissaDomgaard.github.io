@@ -317,24 +317,26 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: #ddd; }
+  background-color: #122426; }
   header h1 {
     margin: 0;
-    font-weight: 700;
-    color: #000; }
+    font-family: "Cinzel Decorative", cursive;
+    font-size: 3.5rem;
+    color: #fff; }
   header h2 {
     margin: 0;
+    font-size: 1.5rem;
     font-weight: 400;
-    color: #000; }
+    color: #fff; }
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666; }
+  background-color: #8C3A58; }
   nav ul {
     list-style-type: none;
     padding: 0;
@@ -344,9 +346,9 @@ nav {
     width: 25%; }
   nav ul li a {
     display: block;
-    background-color: #333333;
+    background-color: #682b41;
     color: #eee;
-    border-left: 1px solid #999999;
+    border-left: 1px solid #933d5d;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -354,16 +356,20 @@ nav {
   nav ul li:first-child a {
     border-left: none; }
   nav ul li a:hover {
-    background-color: #999999;
-    color: #333; }
+    background-color: #c16b8a; }
   nav ul li.active a {
-    background-color: black;
-    color: #fff; }
+    background-color: #32151f;
+    color: #eee; }
 
 /*----------- MAIN --------------*/
 main {
-  padding: 0 2%;
-  min-height: 10rem; }
+  padding: 0 2%; }
+  main h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 2% 0 0 0; }
+  main h3 {
+    font-size: 1.5rem; }
   main img {
     width: 100%; }
   main figure.shape1 {
@@ -386,13 +392,25 @@ main {
     shape-outside: circle(100% at 100% 0%);
     clip-path: circle(100% at 100% 0%);
     margin: .5rem; }
+  main div.gallery figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    position: relative;
+    margin: 0; }
+  main div.gallery figure img {
+    width: 100%;
+    height: auto;
+    position: absolute; }
+  main p {
+    line-height: 1.5rem; }
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
+  background-color: #122426;
   padding: .5rem 2%;
   text-align: center;
-  color: #000; }
+  color: #fff; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -409,9 +427,9 @@ footer {
   nav ul li {
     width: auto; }
   nav ul li:first-child a {
-    border-left: 1px solid #999999; }
+    border-left: 1px solid #9e4163; }
   nav ul li:last-child a {
-    border-right: 1px solid #999999; }
+    border-right: 1px solid #9e4163; }
   nav ul li a {
     padding: .5rem 1rem; }
 

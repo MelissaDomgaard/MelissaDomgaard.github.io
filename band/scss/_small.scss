@@ -8,7 +8,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- BODY --------------*/
 body {
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: $bodyFont;
 }
 
 
@@ -16,14 +16,17 @@ body {
 header {
     padding: .5rem 2%;
     background-color: $primaryColor;
+    
 
     h1 {
         margin: 0;
-        font-weight: $heavyWeight;
+        font-family: $bandFont;
+        font-size: 3.5rem;
         color: $hftColor;
     }
     h2 {
         margin: 0; 
+        font-size: 1.5rem;
         font-weight: $regularWeight;
         color: $hftColor;
         }
@@ -45,9 +48,9 @@ nav {
         }
     ul li a {
         display: block;
-        background-color: darken($navColor, 20%);
+        background-color: darken($navColor, 10%);
         color: #eee;
-        border-left: 1px solid lighten($navColor, 20%);
+        border-left: 1px solid lighten($navColor, 2%);
         padding: .5rem 0;
         text-decoration: none;
         font-size: .9rem;
@@ -57,19 +60,26 @@ nav {
 
     ul li a:hover {
         background-color: lighten($navColor, 20%);
-        color: #333;
         }
     ul li.active a {
-        background-color: darken($navColor, 40%);
-        color: #fff;
+        background-color: darken($navColor, 25%);
+        color: #eee;
         }
 }//end of nav
 
 /*----------- MAIN --------------*/
 main {
     padding: 0 2%;
-    min-height: 10rem;
-    
+    // min-height: 10rem;
+    h2 {
+        font-size: 2rem;
+        font-weight: $heavyWeight;
+        margin: 2% 0 0 0;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
     img {
         width: 100%;
     }
@@ -101,6 +111,22 @@ main {
         margin: .5rem;
     }
 
+div.gallery figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%; // you define this doing image height / width * 100%
+    position: relative;
+    margin: 0;
+}
+div.gallery figure img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+p {
+    line-height: 1.5rem;
+}
 
 }//end of main
 
