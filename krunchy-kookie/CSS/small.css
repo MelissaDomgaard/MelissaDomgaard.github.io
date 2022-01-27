@@ -23,12 +23,14 @@ header {
 header h1 {
     margin: 0;
     color: #eee;
+    font-size: 2.5rem;
 }
 
 header h2 {
     margin: 0;
     font-weight: lighter;
     color: #eee;
+    font-size: 1.2rem;
 }
 
 
@@ -41,6 +43,7 @@ nav {
 nav ul {
     margin: 0;
     padding: 0;
+    font-size: 1.4rem;
 }
 
 nav li {
