@@ -21,10 +21,11 @@ header {
     display: block;
     background-color: $primaryColor;
     padding: 2rem $gutter;
+    justify-content: left;
 
     #logo {
         margin: 0;
-        width: 90px;
+        width: 100px;
         }
     #logo img {
         float: left;
@@ -51,10 +52,12 @@ header {
         visibility: hidden;
         }
     nav { 
-        columns: 2;
+        columns: 1;
         column-gap: 0;}
         } // end of mobile nav
 
+
+/* Start of Nav */
 
 nav {
     background-color: $navColor;
@@ -78,10 +81,12 @@ nav {
     
     a {
         display: block;
-        padding: .8rem 0; /*44px min*/
+        padding: 0.9rem; /*44px min*/
         color: #000;
-        text-align: center;
+        text-align: left;
+
         text-decoration: none; 
+        border-top: solid 1px rgba(0,0,0,0.2);
         }
     
     a:hover {

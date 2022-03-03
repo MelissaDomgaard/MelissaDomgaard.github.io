@@ -1,20 +1,31 @@
-header, nav, footer {
-    max-width: 100%;
-    margin:auto;
-}
 
- header #logo, header h1, header h2, nav ul, main {
+
+ header /*#logo img, header h1, header h2*/, nav ul, main {
     max-width: 75rem;
     margin: auto;
 }
 
-header #logo {
-    padding-bottom: 2rem;
-}
+header 
+    #logo {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        width: 150px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
 
 
-nav li {width:auto;}
-nav a {padding: .5rem 1rem;}
+nav 
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+//  li {width:auto;}
+//  li a {padding: .5rem 1rem;}
     
 main #content figure.images {
     width: 32%;
