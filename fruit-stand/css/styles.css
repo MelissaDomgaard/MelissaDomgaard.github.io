@@ -381,6 +381,12 @@ header h2 {
 }
 
 /*----------- NAVIGATION --------------*/
+@media screen and (max-width: 560px) {
+  nav {
+    columns: 1;
+    column-gap: 0;
+  }
+}
 nav {
   background-color: #ffc1aa;
 }
@@ -389,19 +395,15 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-nav ul li {
-  float: left;
-  width: 25%;
-}
 nav ul li a {
   display: block;
   background-color: #ff9c77;
   color: #000;
   border-left: 1px solid #ffe0d4;
-  padding: .5rem 0;
+  padding: .5rem;
   text-decoration: none;
   font-size: .9rem;
-  text-align: center;
+  text-align: right;
 }
 nav ul li:first-child a {
   border-left: none;
@@ -418,15 +420,18 @@ main {
   min-height: 10rem;
 }
 main h1 {
-  margin: 1rem 2%;
+  margin: 1rem 2% 0.1rem 2%;
 }
-main div.produceGallery {
+main .produceGallery {
   display: flex;
   flex-wrap: wrap;
 }
-main div.produceGallery figure {
+main .produceGallery figure {
   flex-basis: 46%;
-  margin: 1rem 2%;
+  margin: 0.5rem 2%;
+}
+main figcaption {
+  text-align: center;
 }
 main img {
   width: 100%;
@@ -452,21 +457,19 @@ footer {
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   nav ul {
+    display: flex;
+    justify-content: right;
     margin-left: 2%;
   }
-
   nav ul li {
     width: auto;
   }
-
   nav ul li:first-child a {
     border-left: 1px solid #ffe0d4;
   }
-
   nav ul li:last-child a {
     border-right: 1px solid #ffe0d4;
   }
-
   nav ul li a {
     padding: .5rem 1rem;
   }
