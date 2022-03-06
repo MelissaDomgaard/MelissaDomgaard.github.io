@@ -60,8 +60,8 @@ nav {
         text-align: right;
         }
     ul li:first-child a {border-left: none; }
-
-    ul li a:hover { background-color: lighten($menuColor, 5%); }
+    ul li a:hover { text-decoration: underline; }
+     // background-color: lighten($menuColor, 5%); option to use on hover
     ul li.active a { background-color: darken($menuColor, 25%); }
     
 } // end of nav

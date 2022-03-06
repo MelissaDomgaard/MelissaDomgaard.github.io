@@ -409,7 +409,7 @@ nav ul li:first-child a {
   border-left: none;
 }
 nav ul li a:hover {
-  background-color: #ffd4c4;
+  text-decoration: underline;
 }
 nav ul li.active a {
   background-color: #ff642b;
