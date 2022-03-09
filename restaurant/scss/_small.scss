@@ -70,7 +70,6 @@ nav {
         }
     ul li a {
         display: block;
-        background-color: darken($navColor, 20%);
         color: #eee;
         padding: .5rem;
         text-decoration: none;
@@ -81,10 +80,10 @@ nav {
 
     ul li a:hover {
         background-color: lighten($navColor, 20%);
-        color: #333;
+        color: #000;
         }
     ul li.active a {
-        background-color: darken($navColor, 40%);
+        background-color: darken($navColor, 30%);
         color: #fff;
         }
 }//end of nav

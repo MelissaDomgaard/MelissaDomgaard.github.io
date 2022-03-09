@@ -24,9 +24,9 @@
         ul li a{
             padding: .5rem 1rem;
             font-size: 1rem;
+            border-left: 1px solid lighten($navColor, 20%);
         }
-
-        ul li:first-child a {border-left: 1px solid lighten($navColor, 20%);}
+        
         ul li:last-child a {border-right: 1px solid lighten($navColor, 20%);}
        
 }
