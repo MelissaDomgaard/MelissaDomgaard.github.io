@@ -7,7 +7,7 @@
     <meta name="author" content="Melissa Domgaard">
 
     <!-- This start file was build by Paul Cheney  -->
-    <title>HTML5 Start Site by Paul Cheney</title>
+    <title>Gaia Band</title>
 
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,7 +21,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -30,15 +32,15 @@
     <!-- HEADER HERE -->
     <header>
         <h1>GAIA</h1>
-<nav>
-    <button id="hamburgerBtn">&#9776;</button>
-        <ul id="primaryNav">
-            <li class="active"><a href="index.html">Members</a></li>
-            <li><a href="#">Concerts</a></li>
-            <li><a href="#">Book Us</a></li>
-            <li><a href="#">Backstory</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776</span><span>x</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Members</a></li>
+                <li><a href="#">Concerts</a></li>
+                <li><a href="#">Book Us</a></li>
+                <li><a href="#">Backstory</a></li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -47,7 +49,7 @@
         <h2>Members</h2>
         <div class="news">
             <h3> Dan (Drummer)</h3>
-            <figure class="shape1">
+            <figure class="rhom">
                 <img src="images/dan.jpg" alt="Dan">
             </figure>
             <p>Efficiently harness real-time total linkage after empowered web-readiness. Phosfluorescently facilitate
@@ -59,7 +61,7 @@
                 aggregate standards compliant action items before quality alignments. Appropriately.</p>
 
             <h3> Sam (Singer)</h3>
-            <figure class="shape2">
+            <figure class="circ">
                 <img src="images/sam.jpg" alt="Sam">
             </figure>
             <p>Efficiently harness real-time total linkage after empowered web-readiness. Phosfluorescently facilitate
@@ -71,7 +73,7 @@
                 aggregate standards compliant action items before quality alignments. Appropriately.</p>
 
             <h3> Grant (Guitar)</h3>
-            <figure class="shape3">
+            <figure class="pent">
                 <img src="images/grant.jpg" alt="Grant">
             </figure>
             <p>Efficiently harness real-time total linkage after empowered web-readiness. Phosfluorescently facilitate
@@ -83,7 +85,7 @@
                 aggregate standards compliant action items before quality alignments. Appropriately.</p>
 
             <h3> Bill (Backup)</h3>
-            <figure class="shape4">
+            <figure class="trian">
                 <img src="images/bill.jpg" alt="Bill">
             </figure>
             <p>Efficiently harness real-time total linkage after empowered web-readiness. Phosfluorescently facilitate
@@ -95,7 +97,7 @@
                 aggregate standards compliant action items before quality alignments. Appropriately.</p>
         </div>
 
-        <h3>Performances</h3>
+        <h2>Performances</h2>
         <div class="gallery">
             <figure><img alt="concert" class="lazy" data-src="images/concert01.jpg" /></figure>
             <figure><img alt="concert" class="lazy" data-src="images/concert02.jpg" /></figure>
@@ -124,7 +126,12 @@
         &copy; 2021 Melissa Domgaard &bull; Login
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
+
+    <script>var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy", treshold: 0
+        // Your custom settings go here
+    }</script>
 
     <script src="js/scripts.js"></script>
 </body>

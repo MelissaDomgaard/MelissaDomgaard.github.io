@@ -7,7 +7,9 @@ const x = document.getElementById("hamburgerBtn");
 
 x.onclick = toggleMenu;
 
-/* var lazyLoadInstance = new LazyLoad({
+var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy", treshold: 0
     // Your custom settings go here
-} */
+  });
+
+

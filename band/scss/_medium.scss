@@ -8,20 +8,21 @@
 /*----------- HEADER --------------*/
 
 
-
-/*----------- NAVIGATION --------------*/
+header {
+    /*start of nav*/
     nav {
-        ul {margin-left: $gutter;}
+        ul {
+            width: 200px;
+        }
         
-        ul li {width: auto;}
-        
-        ul li:first-child a {border-left: 1px solid lighten($navColor, 5%);}
-        
-        ul li:last-child a {border-right: 1px solid lighten($navColor, 5%);}
-        
-        ul li a{padding: .5rem 1rem;}
+        ul li a{
+            padding: .5rem 1rem;
+        }
 
-}// end of nav
+    }// end of nav
+
+}//end of header
+
 /*----------- MAIN --------------*/
 
 main {

@@ -8,7 +8,33 @@ header, nav, main, footer {
 
 
 /*----------- HEADER --------------*/
+header {
+    display: grid;
+    grid-template-columns: auto auto;
 
+    /*start of nav*/
+    nav {
+        justify-self: end;
+        margin: 0;
+
+        button {display: none;}
+        
+        ul, ul.open {
+            position: relative;
+            display: flex;
+            background-color: transparent;
+            width: auto;
+        }
+        ul li {
+            border-bottom: none;
+        }
+        ul li a {
+            padding: 1rem;
+        }
+
+    }//end of nav
+
+}//end of header
 
 
 /*----------- NAVIGATION --------------*/
