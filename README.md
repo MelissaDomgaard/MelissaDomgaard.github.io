@@ -6,7 +6,7 @@ My website on GitHub
 * Project 4: [National Park](https://melissadomgaard.github.io/national-park/)
 * Project 5: [Restaurant](https://melissadomgaard.github.io/restaurant/)
 * Project 6: [Band](https://melissadomgaard.github.io/band/)
-* Project 7:
+* Project 7: [Law Firm](https://melissadomgaard.github.io/law-firm/)
 * Project 8:
 * Project 9:
 * Project 10:
