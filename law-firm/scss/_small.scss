@@ -111,7 +111,7 @@ main {
         margin-top: .5rem;
         display: block;
         text-align: center;
-        box-shadow: 2px 2px 15px darken($navColor, 10%);
+        box-shadow: 2px 2px 5px darken($navColor, 10%);
         padding: .5rem 0;
     }
 
@@ -138,29 +138,32 @@ main {
 
 
     /*----- CALL TO ACTION BUTTONS -----*/
-    .cta {
+    .ctaWraper {
         background-color: $accent3Color;
         text-align: center;
-        padding: 2rem;
-        margin: .5rem;
-        box-shadow: 2px 2px 15px darken($navColor, 10%);
+        margin-top: .5rem;
+        box-shadow: 2px 2px 5px darken($navColor, 10%);
+    }
 
-        a {
+    .ctaWraper .cta {
+        padding: 2rem;
+        }
+
+     .ctaWraper .cta a {
         color: #eee;
         text-decoration: none;
         font-size: 2rem;
         }
-    }
 
-    .cta:hover {background-color: $accent1Color;}
+    .ctaWraper .cta:hover {background-color: $accent1Color;}
 
     /*----- BLOG POSTS -----*/
     .blogPost {
         background-color: $navColor;
-        margin: .5rem;
+        margin-top: .5rem;
         display: block;
         text-align: left;
-        box-shadow: 2px 2px 15px darken($navColor, 10%);
+        box-shadow: 2px 2px 5px darken($navColor, 10%);
     }
     
     .blogPost figure {display: contents;}
@@ -193,10 +196,10 @@ main {
 
     .tipOfTheDay, .faq {
         background-color: $navColor;
-        margin: .5rem;
+        margin-top: .5rem;
         display: block;
         text-align: left;
-        box-shadow: 2px 2px 15px darken($navColor, 10%);
+        box-shadow: 2px 2px 5px darken($navColor, 10%);
     }
     
     .tipOfTheDay section, .faq section { 
