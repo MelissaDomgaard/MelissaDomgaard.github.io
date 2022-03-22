@@ -95,8 +95,9 @@ main {
     /*----- COLUMNS -----*/
     div.flexed { 
         display: flex; 
-        flex-wrap: wrap; 
-        margin-top: 2rem;}
+        flex-wrap: wrap;
+        margin: 2rem; 
+    }
 
     .column {padding: 0 $gutter;}
     @for $i from 1 through 12 {
@@ -104,18 +105,23 @@ main {
         .small-#{$i} {flex-basis: $w;}
         } //end of loop
 
+    /*----- LAWYER CARDS -----*/
     .lawyerCard {
-    background-color: $navColor;
-    margin: .5rem;
-    display: block;
-    text-align: center;
-    box-shadow: 2px 2px 15px darken($navColor, 10%);
+        background-color: $navColor;
+        margin-top: .5rem;
+        display: block;
+        text-align: center;
+        box-shadow: 2px 2px 15px darken($navColor, 10%);
+        padding: .5rem 0;
     }
 
     .lawyerCard section { 
-        padding: .5rem;
+        padding-bottom: .5rem;
         font-weight: $regularWeight;
-        }
+        font-size: 1.3rem;
+    }
+
+    .lawyerCard figure {display: contents;}
 
     .lawyerCard .learnMore {
         background-color: $accent3Color;
@@ -130,11 +136,14 @@ main {
 
     .lawyerCard .learnMore:hover {background-color: $accent1Color;}
 
+
+    /*----- CALL TO ACTION BUTTONS -----*/
     .cta {
         background-color: $accent3Color;
         text-align: center;
         padding: 2rem;
-        margin: .5rem 0;
+        margin: .5rem;
+        box-shadow: 2px 2px 15px darken($navColor, 10%);
 
         a {
         color: #eee;
@@ -145,9 +154,73 @@ main {
 
     .cta:hover {background-color: $accent1Color;}
 
-
-
+    /*----- BLOG POSTS -----*/
+    .blogPost {
+        background-color: $navColor;
+        margin: .5rem;
+        display: block;
+        text-align: left;
+        box-shadow: 2px 2px 15px darken($navColor, 10%);
+    }
     
+    .blogPost figure {display: contents;}
+    
+    .blogPost section { 
+        padding: .5rem 0 0 .5rem;
+        font-weight: $regularWeight;
+        font-size: 1.3rem;
+    }
+
+    .blogPost p { 
+        padding: 0 .5rem;
+        font-weight: $regularWeight;   
+    }
+
+    .blogPost .readMore {
+        background-color: $primaryColor;
+        padding: .5rem;
+        text-align: center;
+    }
+    
+    .blogPost .readMore a {
+        color: $bodyColor;
+        text-decoration: none;
+    }
+    
+    .blogPost .readMore:hover {background-color: $accent1Color;}
+
+    /*----- BOTTOM CARDS -----*/
+
+    .tipOfTheDay, .faq {
+        background-color: $navColor;
+        margin: .5rem;
+        display: block;
+        text-align: left;
+        box-shadow: 2px 2px 15px darken($navColor, 10%);
+    }
+    
+    .tipOfTheDay section, .faq section { 
+        padding: .5rem 0 0 .5rem;
+        font-weight: $regularWeight;
+        font-size: 1.3rem;
+    }
+
+    .tipOfTheDay p, .faq p { 
+        padding: 0 .5rem;
+        font-weight: $regularWeight;   
+    }
+
+    .tipOfTheDay .readMore, .faq .readMore {
+        padding: .5rem;
+        text-align: center;
+    }
+    
+    .tipOfTheDay .readMore a, .faq .readMore a {
+        color: $bodyColor;
+        text-decoration: none;
+    }
+    
+    .tipOfTheDay .readMore a:hover, .faq .readMore a:hover {color: $accent1Color;}
 
 } //end of main
 
