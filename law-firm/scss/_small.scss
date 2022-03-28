@@ -45,6 +45,7 @@ header {
 /*----------- NAVIGATION --------------*/
 nav {
     background-color: $navColor;
+    margin-bottom: 2rem;
 
     #buttonWraper {text-align: right;}
     button {
@@ -96,7 +97,7 @@ main {
     div.flexed { 
         display: flex; 
         flex-wrap: wrap;
-        margin: 2rem; 
+        margin-bottom: 2rem; 
     }
 
     .column {padding: 0 $gutter;}
