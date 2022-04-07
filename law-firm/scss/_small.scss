@@ -119,7 +119,7 @@ main {
     .lawyerCard section { 
         padding-bottom: .5rem;
         font-weight: $regularWeight;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .lawyerCard figure {display: contents;}
@@ -149,6 +149,11 @@ main {
         background-color: $accent3Color;
         box-shadow: 2px 2px 5px darken($navColor, 10%);
         margin-bottom: 0.5rem;
+
+    }
+
+    .ctaFlexed {
+        justify-content: center;
     }
 
     .cta {
