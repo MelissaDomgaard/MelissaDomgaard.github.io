@@ -453,7 +453,7 @@ main div.flexed {
   margin-bottom: 2rem;
 }
 main .column {
-  padding: 0 2vw;
+  padding: 0 1vw;
 }
 main .small-1 {
   flex-basis: 8.3333333333%;
@@ -492,7 +492,7 @@ main .small-12 {
   flex-basis: 100%;
 }
 main .lawyerCard {
-  background-color: #F3F3F4;
+  background-color: white;
   margin-top: .5rem;
   display: block;
   text-align: center;
@@ -502,36 +502,41 @@ main .lawyerCard {
 main .lawyerCard section {
   padding-bottom: .5rem;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 main .lawyerCard figure {
   display: contents;
 }
+main .lawyerCard img {
+  width: 100%;
+}
 main .lawyerCard .learnMore {
   background-color: #323332;
   padding: .5rem;
-  margin: .5rem 2rem;
+  margin: .5rem 1rem;
+  border-radius: 10px;
 }
 main .lawyerCard .learnMore a {
   color: #eee;
   text-decoration: none;
+  font-size: 1rem;
 }
 main .lawyerCard .learnMore:hover {
   background-color: #e4b343;
 }
 main .ctaWraper {
   background-color: #323332;
-  text-align: center;
-  margin-top: .5rem;
   box-shadow: 2px 2px 5px #d8d8dc;
+  margin-bottom: 0.5rem;
 }
-main .ctaWraper .cta {
-  padding: 2rem;
+main .cta {
+  text-align: center;
+  padding: 1rem 1vw;
 }
 main .ctaWraper .cta a {
   color: #eee;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 main .ctaWraper .cta:hover {
   background-color: #e4b343;
@@ -545,6 +550,9 @@ main .blogPost {
 }
 main .blogPost figure {
   display: contents;
+}
+main .blogPost img {
+  width: 100%;
 }
 main .blogPost section {
   padding: .5rem 0 0 .5rem;

@@ -100,7 +100,7 @@ main {
         margin-bottom: 2rem; 
     }
 
-    .column {padding: 0 $gutter;}
+    .column {padding: 0 1vw;}
     @for $i from 1 through 12 {
         $w:($i / 12) * 100%;
         .small-#{$i} {flex-basis: $w;}
@@ -108,7 +108,7 @@ main {
 
     /*----- LAWYER CARDS -----*/
     .lawyerCard {
-        background-color: $navColor;
+        background-color: lighten($navColor, 5%);
         margin-top: .5rem;
         display: block;
         text-align: center;
@@ -119,20 +119,26 @@ main {
     .lawyerCard section { 
         padding-bottom: .5rem;
         font-weight: $regularWeight;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .lawyerCard figure {display: contents;}
 
+    .lawyerCard img {
+        width: 100%;
+    }
+
     .lawyerCard .learnMore {
         background-color: $accent3Color;
         padding: .5rem;
-        margin: .5rem 2rem;
+        margin: .5rem 1rem;
+        border-radius: 10px;
     }
 
     .lawyerCard .learnMore a {
         color: #eee;
         text-decoration: none;
+        font-size: 1rem;
     }
 
     .lawyerCard .learnMore:hover {background-color: $accent1Color;}
@@ -141,19 +147,19 @@ main {
     /*----- CALL TO ACTION BUTTONS -----*/
     .ctaWraper {
         background-color: $accent3Color;
-        text-align: center;
-        margin-top: .5rem;
         box-shadow: 2px 2px 5px darken($navColor, 10%);
+        margin-bottom: 0.5rem;
     }
 
-    .ctaWraper .cta {
-        padding: 2rem;
-        }
+    .cta {
+        text-align: center;
+        padding: 1rem 1vw;
+    }
 
      .ctaWraper .cta a {
         color: #eee;
         text-decoration: none;
-        font-size: 2rem;
+        font-size: 1.5rem;
         }
 
     .ctaWraper .cta:hover {background-color: $accent1Color;}
@@ -168,6 +174,9 @@ main {
     }
     
     .blogPost figure {display: contents;}
+    .blogPost img {
+        width: 100%;
+    }
     
     .blogPost section { 
         padding: .5rem 0 0 .5rem;
